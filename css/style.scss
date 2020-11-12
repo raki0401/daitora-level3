@@ -119,17 +119,17 @@ img {
   position: relative;
   line-height: 1;
 
+  
   @include mq('sp'){
     font-size: 35px;
   }
-
   &::after {
     content: "";
     background-color: $color-main;
     width: 60px;
     height: 4px;
     position: absolute;
-    bottom: 0;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -465,6 +465,27 @@ img {
 // ==================================
 // News
 // ==================================
+
+.info{
+  margin-top:57px;
+}
+
+.info-meta{
+  a{
+    display: inline-block;
+    text-decoration: none;
+    padding:8px;
+    background-color: #666666;
+    color:#fff;
+    border-radius: 2;
+  }
+}
+
+
+
+
+
+
 
 // ==================================
 // Price
