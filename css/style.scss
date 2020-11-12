@@ -466,6 +466,67 @@ img {
 // News
 // ==================================
 
+#news{
+
+}
+
+.info-items{
+  margin: 60px auto;
+  width:800px;
+  max-width:100%;
+}
+
+.info-item{
+  border-bottom:1px solid;
+  padding:20px 0 10px;
+  display: flex;
+
+
+  &:nth-child(5){
+    border-bottom:none;
+  }
+}
+
+.info-meta{
+
+}
+
+.info-time{
+
+}
+
+.info-label{
+  width: 80px;
+  height:32px;
+}
+
+.info-label01{
+  background-color: #666666;
+  border-radius: 4px;
+ 
+}
+.info-label02{
+
+}
+.info-label03{
+
+}
+
+.info-label{
+  display:inline-block;
+  padding:0 20px;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.info-title{
+
+}
+
+
+
 
 
 

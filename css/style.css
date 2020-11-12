@@ -379,3 +379,38 @@ img {
   font-weight: bold;
   margin-top: 5px;
 }
+
+.info-items {
+  margin: 60px auto;
+  width: 800px;
+  max-width: 100%;
+}
+
+.info-item {
+  border-bottom: 1px solid;
+  padding: 20px 0 10px;
+  display: flex;
+}
+
+.info-item:nth-child(5) {
+  border-bottom: none;
+}
+
+.info-label {
+  width: 80px;
+  height: 32px;
+}
+
+.info-label01 {
+  background-color: #666666;
+  border-radius: 4px;
+}
+
+.info-label {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.info-label a {
+  text-decoration: none;
+}
