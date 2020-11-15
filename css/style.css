@@ -520,24 +520,44 @@ img {
   height: 286px;
 }
 
-.table .table-head tr th {
-  border: 1px solid;
+.table th, .table td {
+  border: 1px solid #6a6767;
+  font-weight: bold;
+  vertical-align: middle;
+  padding: 18px 24px;
+  line-height: 1;
 }
 
-.table .table-body tr th {
-  background: #707070;
-  border: 1px solid;
-  border-color: #333;
+.table th {
   color: #fff;
+  background: #707070;
+}
+
+.table th:first-child {
+  width: 170px;
+}
+
+.table td {
+  background: #fff;
+  text-align: right;
+}
+
+.table td span.table-text-only1 {
+  color: red;
   font-weight: bold;
 }
 
-.table .table-body tr td {
-  border: 1px solid;
+.table td span.table-text-only2 {
+  font-size: 0.85em;
+  font-weight: bold;
 }
 
 .table-under-text {
+  padding-top: 8px;
+}
+
+.table-under-text a {
   font-weight: 600;
-  border-bottom: 1px solid;
-  text-decoration: none;
+  color: #000;
+  padding-top: 87px;
 }
