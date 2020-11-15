@@ -9,32 +9,37 @@ $color-background-base: #fff; // 背景色
 $color-text-base: #333; // テキスト色
 $hover-opacity: 0.6; // 透過度
 
-
 // レイアウト幅
 $layout-width-canvas: 1280px;
 $layout-width-inner: 1200px;
 
 // 階層
 $layer: (
-  modal: 100,   // モダール
-  drawer: 40,   // ドロワー
-  floating: 30, // フローティングアイテム
-  header: 20,   // ヘッダー
-  footer: 10,   // フッター
+  modal: 100,
+  // モダール
+  drawer: 40,
+  // ドロワー
+  floating: 30,
+  // フローティングアイテム
+  header: 20,
+  // ヘッダー
+  footer: 10,
+  // フッター
   default: 1,
 );
-  
+
 // 余白
 $padding-pc: 24px;
 $padding-tab: 24px;
 $padding-sp: 16px;
-  
+
 //ヘッダー高さ
 $header-height-pc: 100px;
 $header-height-sp: 60px;
 
 // フォント
-$font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
+$font-family-default: "游ゴシック体", "Yu Gothic", yugothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ",
+  meiryo, "MS Pゴシック", "MS PGothic", sans-serif; // 標準フォント
 $font-family-english: sans-serif;
 $font-family-base: $font-family-default;
 $font-size-base: 16px;
@@ -56,8 +61,6 @@ $breakpoints: (
   }
 }
 
-
-
 body {
   font-family: $font-family-base;
   font-size: $font-size-base;
@@ -70,9 +73,8 @@ body {
   overflow-x: hidden;
   overflow-wrap: break-word;
   padding-top: $header-height-pc;
- 
 
-  @include mq('sp') {
+  @include mq("sp") {
     padding-top: $header-height-sp;
   }
 }
@@ -81,28 +83,27 @@ img {
   max-width: 100%;
   height: auto;
   border: none;
-  
 }
 
 // PCだけ非表示
 .hidden-pc {
-	@include mq('pc') {
-		display: none;
-	}
+  @include mq("pc") {
+    display: none;
+  }
 }
 
 // タブレットだけ非表示
 .hidden-tab {
-	@include mq('tab-only') {
-		display: none;
-	}
+  @include mq("tab-only") {
+    display: none;
+  }
 }
 
 // スマホだけ非表示
 .hidden-sp {
-	@include mq('sp') {
-		display: none;
-	}
+  @include mq("sp") {
+    display: none;
+  }
 }
 
 //section
@@ -119,8 +120,7 @@ img {
   position: relative;
   line-height: 1;
 
-  
-  @include mq('sp'){
+  @include mq("sp") {
     font-size: 35px;
   }
   &::after {
@@ -161,7 +161,6 @@ img {
 // 	}
 // }
 
-
 // inner インナー
 .inner {
   width: $layout-width-inner;
@@ -169,15 +168,15 @@ img {
   margin: 0 auto;
   height: inherit;
 
-  @include mq('tab') {
-		padding-left: $padding-tab;
-		padding-right: $padding-tab;
-	}
+  @include mq("tab") {
+    padding-left: $padding-tab;
+    padding-right: $padding-tab;
+  }
 
-	@include mq('sp') {
-		padding-left: $padding-sp;
-		padding-right: $padding-sp;
-	}
+  @include mq("sp") {
+    padding-left: $padding-sp;
+    padding-right: $padding-sp;
+  }
 }
 
 // ==================================
@@ -193,8 +192,8 @@ img {
   height: $header-height-pc;
   z-index: 1;
 
-  @include mq('sp'){
-    height:$header-height-sp;
+  @include mq("sp") {
+    height: $header-height-sp;
   }
 }
 
@@ -205,46 +204,42 @@ img {
   padding-bottom: 30px;
 }
 
-.header-left{
+.header-left {
   margin: 0;
   line-height: 1;
 
-  img{
+  img {
     width: 204px;
   }
-  @include mq('tab'){
+  @include mq("tab") {
     width: 180px;
-    height:auto;
+    height: auto;
   }
-  @include mq('sp'){
+  @include mq("sp") {
     width: 140px;
-    height:auto;
+    height: auto;
   }
 }
 
-.header-right{
-  margin-left:auto;
+.header-right {
+  margin-left: auto;
 }
 
-.header-nav  {
-  
-
-  @include mq('sp'){
-    display:none;
+.header-nav {
+  @include mq("sp") {
+    display: none;
   }
 
-  ul{
-    display:flex;
+  ul {
+    display: flex;
   }
-
 
   li {
     margin-right: 40px;
 
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
-    
 
     a {
       position: relative;
@@ -271,11 +266,7 @@ img {
   }
 }
 
-
 //ここからハンバーガーメニューいきます。
-
-
-
 
 // ==================================
 // Top
@@ -290,30 +281,29 @@ img {
   background-size: cover;
   background-position: top;
 
-  @include mq('sp'){
+  @include mq("sp") {
     height: 500px;
   }
 }
 
-.top-content{
+.top-content {
   position: absolute;
   top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 100%;
-	text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
   line-height: 1.2;
-  
-  @include mq('tab'){
+
+  @include mq("tab") {
     padding-right: $padding-tab;
     padding-left: $padding-tab;
   }
-  @include mq('sp'){
+  @include mq("sp") {
     padding-right: $padding-sp;
     padding-left: $padding-sp;
   }
 }
-
 
 .top-text {
   color: $color-text-base;
@@ -325,10 +315,10 @@ img {
   letter-spacing: normal;
   padding-left: 26px;
 
-  @include mq('tab'){
+  @include mq("tab") {
     font-size: 50px;
   }
-  @include mq('sp'){
+  @include mq("sp") {
     font-size: 40px;
   }
 }
@@ -339,12 +329,12 @@ img {
   font-size: 25px;
   text-align: center;
   margin-bottom: 30px;
-  margin-top:25px;
+  margin-top: 25px;
 
-  @include mq('tab'){
+  @include mq("tab") {
     font-size: 30px;
   }
-  @include mq('sp'){
+  @include mq("sp") {
     font-size: 20px;
   }
 }
@@ -373,8 +363,8 @@ img {
   width: 384px;
   max-width: 100%;
 
-  @include mq('sp'){
-    width:290px;
+  @include mq("sp") {
+    width: 290px;
     height: 70px;
     font-size: 20px;
     align-items: center;
@@ -404,24 +394,24 @@ img {
     margin-right: 0;
   }
 
-  @include mq('tab'){
+  @include mq("tab") {
     width: calc((100% / 2) - 24px / 2);
     margin-right: 24px;
 
-    &:nth-child(3n){
+    &:nth-child(3n) {
       margin-right: 24px;
     }
-    &:nth-child(2n){
-      margin-right:0;
+    &:nth-child(2n) {
+      margin-right: 0;
     }
   }
 
-  @include mq('sp'){
+  @include mq("sp") {
     width: 100%;
-    margin-right:24px;
+    margin-right: 24px;
     margin-left: 24px;
-    &:nth-child(2n){
-      margin-right:24px;
+    &:nth-child(2n) {
+      margin-right: 24px;
     }
   }
 }
@@ -436,16 +426,13 @@ img {
   transition: all 0.3s ease 0s;
 }
 
-
-.media-img{
+.media-img {
   text-align: center;
-  
-  
+
   img {
     vertical-align: bottom;
-    width:100%;
-    
-	}
+    width: 100%;
+  }
 }
 
 .media-title {
@@ -459,148 +446,182 @@ img {
   color: #6f7579;
   font-weight: bold;
   margin-top: 5px;
-  
 }
 
 // ==================================
 // News
 // ==================================
 
-#news{
-
+#news {
 }
 
-.news{
- 
-  @include mq('sp'){
-    padding:50px 0 30px;
+.news {
+  @include mq("sp") {
+    padding: 50px 0 30px;
   }
 }
 
-
-.info-items{
+.info-items {
   margin: 60px auto;
-  width:800px;
-  max-width:100%;
+  width: 800px;
+  max-width: 100%;
 
-  @include mq('sp'){
+  @include mq("sp") {
     margin: 30px auto;
   }
-  }
+}
 
-.info-item{
-  border-bottom:1px solid;
-  padding:20px 0 10px;
+.info-item {
+  border-bottom: 1px solid;
+  padding: 20px 0 10px;
   display: flex;
-  &:nth-child(5){
-    border-bottom:none;
+  &:nth-child(5) {
+    border-bottom: none;
   }
-  @include mq('sp'){
+  @include mq("sp") {
     display: block;
   }
 }
 
-.info-meta{
+.info-meta {
   width: (105px + 80px);
   display: flex;
 
-  @include mq('sp'){
+  @include mq("sp") {
     width: 100%;
     justify-content: space-between;
-
   }
-
 }
 
-.info-time{
+.info-time {
   width: 105px;
   padding-top: 5px;
 }
 
-.info-label{
-
-  a{
+.info-label {
+  a {
     text-decoration: none;
-    display:inline-block;
-    color:#fff;
+    display: inline-block;
+    color: #fff;
     text-align: center;
     padding: 8px;
     line-height: 1;
-   
   }
 }
 
-.info-label01{
-  a{
+.info-label01 {
+  a {
     background-color: #666666;
     border-radius: 4px;
   }
- 
 }
-.info-label02{
-  a{
-    background-color: #3F51B5;
+.info-label02 {
+  a {
+    background-color: #3f51b5;
     border-radius: 4px;
   }
 }
-.info-label03{
-  a{
-    background-color: #E81919;
+.info-label03 {
+  a {
+    background-color: #e81919;
     border-radius: 4px;
   }
 }
 
-
-.info-title{
+.info-title {
   padding: 3px 10px 0;
   width: (800px - 185px);
 
-  @include mq('sp'){
-   display:block; 
-   width: 100%;
+  @include mq("sp") {
+    display: block;
+    width: 100%;
   }
-
 }
 
-.news-link{
+.news-link {
   text-align: center;
 
-  a{
+  a {
     text-decoration: none;
     margin-top: 66px;
     color: red;
     font-weight: bold;
     position: relative;
 
-    &::after{
+    &::after {
       content: "";
-      background:url(../img/news-arrow.png)no-repeat center top;
-      width:10px;
+      background: url(../img/news-arrow.png) no-repeat center top;
+      width: 10px;
       height: 10px;
       position: absolute;
       top: 7px;
-      padding-left:10px;
-     
-      
-  
+      padding-left: 10px;
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
 
 // ==================================
 // Price
 // ==================================
+
+#price {
+  padding-right: 40px;
+  padding-left: 40px;
+  background: #efefef;
+}
+
+.section-title {
+  margin-bottom: 100px;
+}
+
+.price-contents {
+  display: flex;
+  justify-content: space-around;
+}
+
+.price-image {
+  width: 454px;
+  margin-right: 40px;
+}
+
+.price-table {
+  width: 704px;
+}
+
+.table {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 706px;
+  height: 286px;
+
+  .table-head {
+    tr {
+      th {
+        border: 1px solid;
+      }
+    }
+  }
+  .table-body {
+    tr {
+      th {
+        background: #707070;
+        border: 1px solid;
+        border-color: #333;
+        color: #fff;
+        font-weight: bold;
+      }
+      td {
+        border: 1px solid;
+      }
+    }
+  }
+}
+
+.table-under-text {
+  font-weight: 600;
+  border-bottom: 1px solid;
+  text-decoration: none;
+}
 
 // ==================================
 // Access
