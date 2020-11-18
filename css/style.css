@@ -20,7 +20,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border: none;
 }
@@ -501,7 +501,12 @@ img {
 
 .price-contents {
   display: flex;
-  justify-content: space-around;
+}
+
+@media (max-width: 767px) {
+  .price-contents {
+    display: block;
+  }
 }
 
 .price-image {
@@ -509,18 +514,32 @@ img {
   margin-right: 40px;
 }
 
+@media (max-width: 767px) {
+  .price-image {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 .price-table {
   width: 704px;
+}
+
+@media (max-width: 767px) {
+  .price-table {
+    width: 100%;
+  }
 }
 
 .table {
   border-collapse: collapse;
   table-layout: fixed;
-  width: 706px;
+  width: 100%;
   height: 286px;
 }
 
-.table th, .table td {
+.table th,
+.table td {
   border: 1px solid #6a6767;
   font-weight: bold;
   vertical-align: middle;
@@ -535,6 +554,12 @@ img {
 
 .table th:first-child {
   width: 170px;
+}
+
+@media (max-width: 1247px) {
+  .table th:first-child {
+    width: 100px;
+  }
 }
 
 .table td {
@@ -562,6 +587,10 @@ img {
   padding-top: 87px;
 }
 
+* {
+  outline: 1px solid;
+}
+
 .access-map {
   width: 800px;
   max-width: 100%;
@@ -572,7 +601,6 @@ img {
   width: 100%;
   position: relative;
   padding-top: 50%;
-  border: 8px solid #000;
 }
 
 .iframe-wrappe iframe {
@@ -581,13 +609,18 @@ img {
   height: 100%;
   top: 0;
   left: 0;
-  border: 8px solid #000;
 }
 
 .access-map-text {
   width: 800px;
   max-width: 100%;
   margin: 8px auto;
+}
+
+@media (max-width: 767px) {
+  .access-map-text {
+    width: 100%;
+  }
 }
 
 .access-map-text th {
@@ -602,7 +635,7 @@ img {
 }
 
 .access-map-btn-wrappe .access-map-btn {
-  background: #3F51B5;
+  background: #3f51b5;
   width: 304px;
   height: 56px;
   color: #fff;
