@@ -110,6 +110,10 @@ img {
 .section {
   padding-top: 100px;
   padding-bottom: 120px;
+
+  @include mq("sp"){
+    padding: 50px 0 70px;
+  }
 }
 
 .section-title {
@@ -122,6 +126,8 @@ img {
 
   @include mq("sp") {
     font-size: 35px;
+    margin-bottom: 50px !important;
+    padding-top: 0px;
   }
   &::after {
     content: "";
@@ -453,9 +459,7 @@ img {
 // ==================================
 
 .news {
-  @include mq("sp") {
-    padding: 50px 0 30px;
-  }
+ 
 }
 
 .info-items {
@@ -594,6 +598,7 @@ img {
     @include mq("sp") {
       width: 100%;
       margin-right: 0;
+      margin-bottom: 80px;
   }
   
 }
@@ -624,11 +629,15 @@ img {
     color: #fff;
     background: #707070;
 
-    &:first-child {
+    &:nth-child(1) {
       width: 170px;
 
       @include mq("tab") {
         width: 100px;
+      }
+      @include mq("sp"){
+        width: 100%;
+        max-width: 100px;
       }
     }
   }
@@ -656,9 +665,6 @@ img {
     padding-top: 87px;
   }
 }
-*{
-  outline: 1px solid ;
-  }
 // ==================================
 // Access
 // ==================================
@@ -674,7 +680,7 @@ img {
   position: relative;
   padding-top: (400 / 800) * 100%;
   // border: 8px solid #000;
-
+  
   iframe {
     position: absolute;
     width: 100%;
@@ -688,12 +694,17 @@ img {
   width: 800px;
   max-width: 100%;
   margin: 8px auto;
-
+  
+  @include mq("tab"){
+    width: 100%;
+    max-width: 800px;
+  }
+  
   @include mq("sp"){
     width: 100%;
   }
   th {
-    width: 104px;
+    width: 92px;
     text-align: start;
     font-weight: bold;
   }
@@ -716,16 +727,16 @@ img {
     // padding: 15px;
     line-height: 56px;
     border-radius: 10px;
-
+    
     box-sizing: content-box;
     border-bottom: 8px solid #000;
-
+    
     &:hover {
       // opacity: 0.5;
       border-bottom: none;
       transform: translateY(8px);
     }
-
+    
     &::after {
       content: "";
       color: #fff;
@@ -736,8 +747,16 @@ img {
       top: 2px;
       right: 0px;
     }
+    @include mq("sp"){
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
+
+// *{
+//   outline: 1px solid ;
+//   }
 
 // ==================================
 // Contact

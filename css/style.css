@@ -48,6 +48,12 @@ img {
   padding-bottom: 120px;
 }
 
+@media (max-width: 767px) {
+  .section {
+    padding: 50px 0 70px;
+  }
+}
+
 .section-title {
   font-size: 48px;
   font-weight: bold;
@@ -60,6 +66,8 @@ img {
 @media (max-width: 767px) {
   .section-title {
     font-size: 35px;
+    margin-bottom: 50px !important;
+    padding-top: 0px;
   }
 }
 
@@ -380,12 +388,6 @@ img {
   margin-top: 5px;
 }
 
-@media (max-width: 767px) {
-  .news {
-    padding: 50px 0 30px;
-  }
-}
-
 .info-items {
   margin: 60px auto;
   width: 800px;
@@ -518,6 +520,7 @@ img {
   .price-image {
     width: 100%;
     margin-right: 0;
+    margin-bottom: 80px;
   }
 }
 
@@ -552,13 +555,20 @@ img {
   background: #707070;
 }
 
-.table th:first-child {
+.table th:nth-child(1) {
   width: 170px;
 }
 
 @media (max-width: 1247px) {
-  .table th:first-child {
+  .table th:nth-child(1) {
     width: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .table th:nth-child(1) {
+    width: 100%;
+    max-width: 100px;
   }
 }
 
@@ -587,10 +597,6 @@ img {
   padding-top: 87px;
 }
 
-* {
-  outline: 1px solid;
-}
-
 .access-map {
   width: 800px;
   max-width: 100%;
@@ -617,6 +623,13 @@ img {
   margin: 8px auto;
 }
 
+@media (max-width: 1247px) {
+  .access-map-text {
+    width: 100%;
+    max-width: 800px;
+  }
+}
+
 @media (max-width: 767px) {
   .access-map-text {
     width: 100%;
@@ -624,7 +637,7 @@ img {
 }
 
 .access-map-text th {
-  width: 104px;
+  width: 92px;
   text-align: start;
   font-weight: bold;
 }
@@ -664,4 +677,11 @@ img {
   width: 50px;
   top: 2px;
   right: 0px;
+}
+
+@media (max-width: 767px) {
+  .access-map-btn-wrappe .access-map-btn {
+    width: 100%;
+    max-width: 300px;
+  }
 }
