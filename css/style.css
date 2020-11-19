@@ -497,6 +497,12 @@ img {
   background: #efefef;
 }
 
+@media (max-width: 767px) {
+  #price {
+    padding: 0 0px;
+  }
+}
+
 .section-title {
   margin-bottom: 100px;
 }
@@ -550,6 +556,13 @@ img {
   line-height: 1;
 }
 
+@media (max-width: 767px) {
+  .table th,
+  .table td {
+    padding: 16px;
+  }
+}
+
 .table th {
   color: #fff;
   background: #707070;
@@ -567,8 +580,7 @@ img {
 
 @media (max-width: 767px) {
   .table th:nth-child(1) {
-    width: 100%;
-    max-width: 100px;
+    width: 80px;
   }
 }
 
