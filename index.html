@@ -30,11 +30,11 @@
           </ul>
         </nav>
         <!-- ここからハンバーガーメニュー -->
-
+        
       </div>
     </div>
   </header>
-
+  
   <section class="top">
     <div class="top-content">
       <div class="top-text">
@@ -46,6 +46,10 @@
       <div class="top-button"><a class="btn" href="#">お問い合わせ</a></div>
     </div>
   </section>
+
+  <!-- ======================================================
+                            CARD
+  ====================================================== -->
 
   <section id="card" class="card section">
     <div class="inner">
@@ -108,7 +112,10 @@
       </div>
     </div>
   </section>
-
+  
+  <!-- ======================================================
+                            NEWS
+  ====================================================== -->
 
   <section id="news" class="news section">
     <div class="inner">
@@ -165,11 +172,15 @@
           </div>
           <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュース</div>
         </div>
-
+        
       </div>
       <div class="news-link"><a href="#">more</a></div>
     </div>
   </section>
+  
+  <!-- ======================================================
+                            PRICE
+  ====================================================== -->
 
   <section id="price" class="section">
     <div class="inner price-inner">
@@ -220,6 +231,12 @@
     </div>
   </section>
 
+
+
+  <!-- ======================================================
+                            ACCSESS
+  ====================================================== -->
+
   <section id="access" class="section">
     <div class="section-title">Access</div>
     <div class="inner">
@@ -241,6 +258,81 @@
       <div class="access-map-btn-wrappe">
         <a href="https://goo.gl/maps/CjFKeh5DzPmxQEBr6" class="access-map-btn">Googleマップで見る</a>
       </div>
+    </div>
+  </section>
+
+
+<!-- ======================================================
+                          CONTCT
+====================================================== -->
+
+  <section id="contact" class="section">
+    <div class="inner">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-item">
+      <form action="#">
+        <dl class="contact-controls">
+          <div class="contact-control">
+            <dt>
+              <label  for="your-name" class="contact-label">お名前</label>
+            </dt>
+            <dd>
+              <input id="your-name" class="form-input" type="text" name="your-name" value="" placeholder="山田　太郎" required>
+            </dd>
+          </div>
+
+          <div class="contact-control">
+            <dt>
+              <label for="your-mail" class="contact-label">メールアドレス</label>  
+            </dt>
+            <dd>
+              <input type="email" id="your-mail" class="form-input"  name="your-mail" value="" placeholder="text@example.com" required>
+            </dd>
+          </div>
+
+          <div class="contact-control">
+            <dt>
+              <label for="your-kind" class="contact-label">お問い合わせ種別</label>
+            </dt>
+            <dd>
+              <select name="your-kind" id="your-kind" class="form-select">
+                <option value="">----</option>
+                <option value="a">セレクトA</option>
+                <option value="b">セレクトB</option>
+                <option value="c">セレクトC</option>
+              </select>
+            </dd>
+          </div>
+
+          <div class="contact-control">
+            <dt>
+              <label for="your-massage" class="contact-label">お問い合わせ内容</label>
+            </dt>
+            <dd>
+              <textarea name="your-message" id="your-massage" class="form-textarea" cols="30" rows="10" placeholder="お問い合わせ内容を入力してください"></textarea>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="contact-radio">
+          <label class="radio-item"><input type="radio" class="form-radio" name="your-radio" checked><span>ラジオ1</span></label>
+          <label class="radio-item"><input type="radio" class="form-radio" name="your-radio" ><span>ラジオ2</span></label>
+          <label class="radio-item"><input type="radio" class="form-radio" name="your-radio" ><span>ラジオ3</span></label>
+        </div>
+
+        <div class="contact-check">
+          <label>
+            <input class="form-checkbox" type="checkbox" name="your-check" required>
+              <span><a href="">プライバシーポリシーに合意する</a></span>
+            </input>
+          </label>
+        </div>
+
+        <div class="contact-submit">
+          <input type="submit" class="form-submit" value="送信">
+        </div>
+      </form>
+    </div>
     </div>
   </section>
 

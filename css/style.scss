@@ -571,12 +571,14 @@ img {
   background: #efefef;
 
   @include mq("sp"){
-    padding: 0 0px;
+    padding: 10 0px;
   }
 }
 
 .section-title {
   margin-bottom: 100px;
+
+  
 }
 
 // .price-inner{
@@ -736,14 +738,17 @@ img {
     // padding: 15px;
     line-height: 56px;
     border-radius: 10px;
-    
+    box-shadow: 5px 5px 0 0px rgba(150,150,150,0.9);
     box-sizing: content-box;
-    border-bottom: 8px solid #000;
+    // border-bottom: 8px solid #000;
     
     &:hover {
       // opacity: 0.5;
-      border-bottom: none;
-      transform: translateY(8px);
+      // border-bottom: none;
+      transform: translateY(5px);
+      // transform: translateX(5px);
+
+      box-shadow: none;
     }
     
     &::after {
