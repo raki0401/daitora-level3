@@ -776,6 +776,46 @@ img {
 // Contact
 // ==================================
 
+#contact{
+  background-color: #efefef;
+}
+
+.contact-item{
+  width: 800px;
+  margin:80px auto;
+  padding: 60px;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+
+.contact-controls{
+  margin: 0;
+}
+
+.contact-control{
+  display: flex;
+  margin-bottom: 60px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  dt{
+    width: 160px;
+  }
+  dd{
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.contact-label{
+ 
+}
+
+
+
+
 // ==================================
 // Footer
 // ==================================
