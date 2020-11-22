@@ -82,7 +82,26 @@ body {
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.btn-blue {
+  background: #3f51b5;
+  width: 304px;
+  height: 56px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  // padding: 15px;
+  line-height: 56px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+  box-sizing: content-box;
+  // border-bottom: 8px solid #000;
 }
 
 img {
@@ -117,7 +136,7 @@ img {
   padding-top: 100px;
   padding-bottom: 120px;
 
-  @include mq("sp"){
+  @include mq("sp") {
     padding: 50px 0 70px;
   }
 }
@@ -465,7 +484,6 @@ img {
 // ==================================
 
 .news {
- 
 }
 
 .info-items {
@@ -576,21 +594,18 @@ img {
   padding-left: 40px;
   background: #efefef;
 
-  @include mq("sp"){
+  @include mq("sp") {
     padding: 10 0px;
   }
 }
 
 .section-title {
   margin-bottom: 100px;
-
-  
 }
 
 // .price-inner{
 //   width: 100%;
 // }
-
 
 .price-contents {
   display: flex;
@@ -605,14 +620,12 @@ img {
 .price-image {
   width: 454px;
   margin-right: 40px;
-  
 
-    @include mq("sp") {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: 80px;
+  @include mq("sp") {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 80px;
   }
-  
 }
 
 .price-table {
@@ -637,24 +650,22 @@ img {
     padding: 18px 24px;
     line-height: 1;
 
-    @include mq("sp"){
+    @include mq("sp") {
       padding: 16px;
     }
   }
   th {
     color: #fff;
     background: #707070;
-    
+
     &:nth-child(1) {
       width: 170px;
 
       @include mq("tab") {
         width: 100px;
       }
-      @include mq("sp"){
+      @include mq("sp") {
         width: 80px;
-        
-       
       }
     }
   }
@@ -697,7 +708,7 @@ img {
   position: relative;
   padding-top: (400 / 800) * 100%;
   // border: 8px solid #000;
-  
+
   iframe {
     position: absolute;
     width: 100%;
@@ -711,13 +722,13 @@ img {
   width: 800px;
   max-width: 100%;
   margin: 8px auto;
-  
-  @include mq("tab"){
+
+  @include mq("tab") {
     width: 100%;
     max-width: 800px;
   }
-  
-  @include mq("sp"){
+
+  @include mq("sp") {
     width: 100%;
   }
   th {
@@ -725,13 +736,12 @@ img {
     text-align: start;
     font-weight: bold;
   }
-  
 }
 
 .access-map-btn-wrappe {
   margin-top: 22px;
   text-align: center;
-  .access-map-btn {
+  .btn-blue {
     background: #3f51b5;
     width: 304px;
     height: 56px;
@@ -744,10 +754,10 @@ img {
     // padding: 15px;
     line-height: 56px;
     border-radius: 10px;
-    box-shadow: 5px 5px 0 0px rgba(150,150,150,0.9);
+    box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
     box-sizing: content-box;
     // border-bottom: 8px solid #000;
-    
+
     &:hover {
       // opacity: 0.5;
       // border-bottom: none;
@@ -756,7 +766,7 @@ img {
 
       box-shadow: none;
     }
-    
+
     &::after {
       content: "";
       color: #fff;
@@ -767,7 +777,7 @@ img {
       top: 2px;
       right: 0px;
     }
-    @include mq("sp"){
+    @include mq("sp") {
       width: 100%;
       max-width: 300px;
     }
@@ -782,49 +792,48 @@ img {
 // Contact
 // ==================================
 
-#contact{
+#contact {
   background-color: #efefef;
 }
 
-.contact-item{
+.contact-item {
   width: 800px;
-  margin:80px auto;
+  margin: 80px auto;
   padding: 60px;
   background-color: #fff;
   max-width: 100%;
 }
 
-
-.contact-controls{
+.contact-controls {
   margin: 0;
 }
 
-.contact-control{
+.contact-control {
   display: flex;
   margin-bottom: 60px;
-  &:last-child{
+  &:last-child {
     margin-bottom: 0;
   }
-  dt{
+  dt {
     width: 160px;
     padding-top: 6px;
   }
-  dd{
+  dd {
     flex-grow: 1;
     padding: 0;
     margin: 0;
   }
 }
 
-.contact-label{
+.contact-label {
   font-size: 16px;
   font-weight: 700;
 }
 
-.contact-label-required{
+.contact-label-required {
   position: relative;
-  &::after{
-    content:"必須";
+  &::after {
+    content: "必須";
     position: absolute;
     background: $color-active;
     display: block;
@@ -841,32 +850,32 @@ img {
   }
 }
 
-.contact-radio{
+.contact-radio {
   margin-top: 33px;
 }
 
-.radio-item{
+.radio-item {
   margin-right: 36px;
 }
 
-.contact-check{
+.contact-check {
   margin-top: 64px;
   text-align: center;
 }
 
-.contact-check{
-  a{
+.contact-check {
+  a {
     color: $color-text-base;
     font-weight: bold;
   }
 }
 
-.contact-submit{
+.contact-submit {
   margin-top: 35px;
   text-align: center;
 }
 
-.form-input{
+.form-input {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -883,11 +892,11 @@ img {
   height: 38px;
 }
 
-.form-select{
+.form-select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  background: transparent url(../img/select-arrow.png) no-repeat center right 8px/16px 16px;
+  background: transparent url(../img/select-arrow.png) no-repeat center right 16px;
   border: 1px solid rgba(0, 0, 0, 0.7);
   border-radius: 0;
   color: inherit;
@@ -898,15 +907,13 @@ img {
   width: 100%;
   box-shadow: none;
   height: 38px;
-  
-  
+
   &::-ms-expand {
     display: none;
   }
-  
- }
+}
 
-.form-textarea{
+.form-textarea {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -923,9 +930,109 @@ img {
   box-shadow: none;
 }
 
+// デフォルトのラジオボタンを非表示
+.form-radio {
+  display: none;
 
+  // オリジナルボタンの作成のためpaddingで左側にスペースを作る
+  + span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 28px;
+    position: relative;
 
+    // 擬似要素のbeforeとafterを共通でセット
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+    }
 
+    // beforeをラジオボタンの枠として利用するためデザインを適応する
+    &::before {
+      background: #fff;
+      border: 1px solid #707070;
+      display: block;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    // afterは枠の中のチェックマークとして利用するためデザインを適応する
+    // デフォルトのチェックマークはopacity:0で透明にしておく
+    &::after {
+      // border: 1px solid transparent;
+      left: 5px;
+      width: 10px;
+      height: 10px;
+      background: $color-main;
+      transition: opacity 0.3s ease 0s;
+      opacity: 0;
+    }
+  }
+  &:checked {
+    + span {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.form-checkbox {
+  display: none;
+
+  + span {
+    display: inline-block;
+    padding: 0 0 0 60px;
+    cursor: pointer;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      border: 1px solid #707070;
+      width: 25px;
+      height: 25px;
+      left: 20px;
+    }
+    &::after {
+      background: url(../img/checkbox.png) no-repeat center;
+      width: 25px;
+      height: 25px;
+      left: 20px;
+      transition: opacity 0.3s ease 0s;
+      opacity: 0;
+    }
+  }
+  &:checked {
+    + span {
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.contact-submit {
+  .btn-blue {
+    &:hover {
+      transform: translateY(5px);
+      box-shadow: none;
+    }
+  }
+  .btn-arrow {
+    background: $color-main url(../img/button-arrow.png) no-repeat center right 8px;
+  }
+}
 
 // ==================================
 // Footer
