@@ -779,7 +779,7 @@ img {
     }
     @include mq("sp") {
       width: 100%;
-      max-width: 300px;
+      // max-width: 300px;
     }
   }
 }
@@ -802,6 +802,10 @@ img {
   padding: 60px;
   background-color: #fff;
   max-width: 100%;
+  @include mq("sp"){
+    padding: 20px ;
+    margin-top: 50px;
+  }
 }
 
 .contact-controls {
@@ -811,27 +815,43 @@ img {
 .contact-control {
   display: flex;
   margin-bottom: 60px;
+  @include mq("sp") {
+    display: block;
+  }
   &:last-child {
     margin-bottom: 0;
   }
   dt {
     width: 160px;
     padding-top: 6px;
+    @include mq("sp"){
+      width: 100%;
+    }
   }
   dd {
     flex-grow: 1;
     padding: 0;
     margin: 0;
+    @include mq("sp"){
+      margin-top: 8px;  
+    }
   }
 }
 
 .contact-label {
   font-size: 16px;
   font-weight: 700;
+  @include mq("sp"){
+    display: inline-block;
+  }
 }
 
 .contact-label-required {
   position: relative;
+  @include mq("sp"){
+    padding-right: 54px;
+  }
+
   &::after {
     content: "必須";
     position: absolute;
@@ -847,6 +867,12 @@ img {
     text-align: center;
     top: calc(100% + 8px);
     left: 0;
+    @include mq("sp") {
+      top: 50%;
+      left: auto;
+      right: 0;
+      transform: translateY(-50%);
+    }
   }
 }
 
@@ -856,6 +882,15 @@ img {
 
 .radio-item {
   margin-right: 36px;
+  @include mq("sp"){
+    display: block;
+    margin-bottom: 16px;
+  }
+  span{
+    @include mq("sp"){
+      font-weight: bold;
+    }
+  }
 }
 
 .contact-check {
@@ -890,6 +925,9 @@ img {
   width: 100%;
   box-shadow: none;
   height: 38px;
+  // @include mq("sp"){
+  //   margin-top: 10px;
+  // }
 }
 
 .form-select {
@@ -1031,6 +1069,10 @@ img {
   }
   .btn-arrow {
     background: $color-main url(../img/button-arrow.png) no-repeat center right 8px;
+    @include mq("sp"){
+      // max-width: 304px;
+      width: 100%;
+    }
   }
 }
 
