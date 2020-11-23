@@ -22,7 +22,8 @@ body {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .btn-blue {
@@ -38,8 +39,10 @@ body {
   text-decoration: none;
   line-height: 56px;
   border-radius: 10px;
-  box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
-  box-sizing: content-box;
+  -webkit-box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+          box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 img {
@@ -102,7 +105,8 @@ img {
   position: absolute;
   bottom: 10px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .inner {
@@ -143,8 +147,12 @@ img {
 }
 
 .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -183,6 +191,8 @@ img {
 }
 
 .header-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -209,6 +219,7 @@ img {
   height: 3px;
   background-color: #e81919;
   opacity: 0;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -236,7 +247,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
   line-height: 1.2;
@@ -304,7 +316,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -315,8 +328,10 @@ img {
   text-align: center;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   padding: 22px 24px;
   border-radius: 8px;
@@ -330,7 +345,9 @@ img {
     width: 290px;
     height: 70px;
     font-size: 20px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     max-width: 100%;
   }
 }
@@ -341,8 +358,11 @@ img {
 
 .card-items {
   margin-top: 57px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card-item {
@@ -386,6 +406,7 @@ img {
   padding: 16px 16px 14px;
   display: block;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
 
@@ -426,6 +447,8 @@ img {
 .info-item {
   border-bottom: 1px solid;
   padding: 20px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -441,13 +464,17 @@ img {
 
 .info-meta {
   width: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 767px) {
   .info-meta {
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -531,6 +558,8 @@ img {
 }
 
 .price-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -694,13 +723,17 @@ img {
   text-decoration: none;
   line-height: 56px;
   border-radius: 10px;
-  box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
-  box-sizing: content-box;
+  -webkit-box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+          box-shadow: 5px 5px 0 0px rgba(150, 150, 150, 0.9);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
 }
 
 .access-map-btn-wrappe .btn-blue:hover {
-  transform: translateY(5px);
-  box-shadow: none;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .access-map-btn-wrappe .btn-blue::after {
@@ -738,6 +771,8 @@ img {
 }
 
 .contact-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
 }
@@ -752,7 +787,9 @@ img {
 }
 
 .contact-control dd {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 0;
   margin: 0;
 }
@@ -819,7 +856,8 @@ img {
   font-size: 1em;
   padding: 12px 16px;
   width: 100%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   height: 38px;
 }
 
@@ -836,7 +874,8 @@ img {
   font-size: 1em;
   padding: 0.4em 0.8em;
   width: 100%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   height: 38px;
 }
 
@@ -858,7 +897,8 @@ img {
   height: 240px;
   padding: 0.4em 0.8em;
   width: 100%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .form-radio {
@@ -877,7 +917,8 @@ img {
   position: absolute;
   border-radius: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .form-radio + span::before {
@@ -894,6 +935,7 @@ img {
   width: 10px;
   height: 10px;
   background: #3f51b5;
+  -webkit-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
   opacity: 0;
 }
@@ -917,7 +959,8 @@ img {
   content: "";
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .form-checkbox + span::before {
@@ -932,6 +975,7 @@ img {
   width: 25px;
   height: 25px;
   left: 20px;
+  -webkit-transition: opacity 0.3s ease 0s;
   transition: opacity 0.3s ease 0s;
   opacity: 0;
 }
@@ -941,10 +985,13 @@ img {
 }
 
 .contact-submit .btn-blue:hover {
-  transform: translateY(5px);
-  box-shadow: none;
+  -webkit-transform: translateY(58px);
+          transform: translateY(58px);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contact-submit .btn-arrow {
   background: #3f51b5 url(../img/button-arrow.png) no-repeat center right 8px;
 }
+/*# sourceMappingURL=style.css.map */
