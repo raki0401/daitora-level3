@@ -130,6 +130,13 @@ img {
   }
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .header {
   background-color: #3f51b5;
   position: fixed;
@@ -1060,11 +1067,18 @@ img {
   }
 }
 
+.wrappe {
+  position: relative;
+}
+
 #footer {
   background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#333));
   background: linear-gradient(to bottom, #666, #333);
   opacity: 1;
   color: #fff;
+  position: absolute;
+  width: 100%;
+  height: auto;
 }
 
 .footer-wrapper {
@@ -1101,8 +1115,15 @@ img {
   margin-left: 500px;
 }
 
+.footer-right ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-right img {
-  width: 30px;
+  width: 50px;
+  padding-left: 20px;
 }
 
 .footer-address-1 {

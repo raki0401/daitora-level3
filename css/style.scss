@@ -198,6 +198,7 @@ img {
   max-width: 100%;
   margin: 0 auto;
   height: inherit;
+  
 
   @include mq("tab") {
     padding-left: $padding-tab;
@@ -209,7 +210,12 @@ img {
     padding-right: $padding-sp;
   }
 }
-
+html,
+body {
+	margin: 0;
+  padding: 0;
+  height: 100%;
+}
 // ==================================
 // HEADER
 // ==================================
@@ -483,8 +489,7 @@ img {
 // News
 // ==================================
 
-.news {
-}
+
 
 .info-items {
   margin: 60px auto;
@@ -1080,12 +1085,26 @@ img {
 // Footer
 // ==================================
 
+.wrappe{
+  position: relative;
+}
 
 #footer{
 background: linear-gradient(to bottom, #666, #333);
 opacity: 1;
 color: #fff;
+position: absolute;
+width: 100%;
+height: auto;
+
 }
+
+// .inner-footer{
+// bottom: 0;
+// width: 100%;
+// height: 900px;
+// }
+
 
 .footer-wrapper{
   display: flex;
@@ -1115,9 +1134,13 @@ color: #fff;
 }
 
 .footer-right{
+  ul{
+    display: flex;
+  }
   margin-left: 500px;
   img{
-    width: 30px;
+    width: 50px;
+    padding-left: 20px;
   }
 }
 
