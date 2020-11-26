@@ -92,7 +92,7 @@ img {
 @media (max-width: 767px) {
   .section-title {
     font-size: 35px;
-    margin-bottom: 50px !important;
+    margin-bottom: 25px !important;
     padding-top: 0px;
   }
 }
@@ -556,7 +556,7 @@ body {
 
 @media (max-width: 767px) {
   #price {
-    padding: 10 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -776,6 +776,7 @@ body {
   .contact-item {
     padding: 20px;
     margin-top: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1079,28 +1080,60 @@ body {
   position: absolute;
   width: 100%;
   height: auto;
+  padding: 48px 0 24px;
 }
 
 .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 60px;
 }
 
-.footer-left img {
-  width: 204px;
+@media (max-width: 767px) {
+  .footer-wrapper {
+    display: block;
+  }
 }
 
-.footer-middle .footer-nav {
-  width: 335px;
+.footer-left {
+  width: 40%;
+}
+
+@media (max-width: 767px) {
+  .footer-left {
+    width: 100%;
+  }
+}
+
+.footer-left .footer-rogo {
+  width: 205px;
+}
+
+.footer-left .footer-address-wrapper .footer-address-1 {
+  width: 100%;
+}
+
+.footer-left .footer-address-wrapper .footer-address-2 {
+  width: 100%;
+}
+
+.footer-middle {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .footer-middle {
+    padding: 50px 0;
+    width: 100%;
+  }
 }
 
 .footer-middle .footer-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 203px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer-middle .footer-nav ul li {
@@ -1111,14 +1144,41 @@ body {
   padding-right: 0;
 }
 
+@media (max-width: 1247px) {
+  .footer-middle .footer-nav ul li {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-middle .footer-nav ul li {
+    padding-right: 16px;
+  }
+}
+
 .footer-right {
-  margin-left: 500px;
+  width: 20%;
+}
+
+@media (max-width: 767px) {
+  .footer-right {
+    margin: 0 auto;
+  }
 }
 
 .footer-right ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  justify-self: flex-end;
+}
+
+@media (max-width: 767px) {
+  .footer-right ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-right img {
@@ -1136,7 +1196,13 @@ body {
 
 .footer-copy-right {
   text-align: center;
-  padding: 24px;
+  padding-top: 24px;
+}
+
+@media (max-width: 767px) {
+  .footer-copy-right {
+    font-size: 14px;
+  }
 }
 
 #page-top {
@@ -1144,5 +1210,13 @@ body {
   position: fixed;
   right: 24px;
   bottom: 24px;
+}
+
+@media (max-width: 767px) {
+  #page-top {
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

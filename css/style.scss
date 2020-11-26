@@ -151,7 +151,7 @@ img {
 
   @include mq("sp") {
     font-size: 35px;
-    margin-bottom: 50px !important;
+    margin-bottom: 25px !important;
     padding-top: 0px;
   }
   &::after {
@@ -198,7 +198,6 @@ img {
   max-width: 100%;
   margin: 0 auto;
   height: inherit;
-  
 
   @include mq("tab") {
     padding-left: $padding-tab;
@@ -212,7 +211,7 @@ img {
 }
 html,
 body {
-	margin: 0;
+  margin: 0;
   padding: 0;
   height: 100%;
 }
@@ -489,8 +488,6 @@ body {
 // News
 // ==================================
 
-
-
 .info-items {
   margin: 60px auto;
   width: 800px;
@@ -600,7 +597,7 @@ body {
   background: #efefef;
 
   @include mq("sp") {
-    padding: 10 0px;
+    padding: 10px 0px;
   }
 }
 
@@ -807,9 +804,10 @@ body {
   padding: 60px;
   background-color: #fff;
   max-width: 100%;
-  @include mq("sp"){
-    padding: 20px ;
+  @include mq("sp") {
+    padding: 20px;
     margin-top: 50px;
+    margin-bottom: 0px;
   }
 }
 
@@ -829,7 +827,7 @@ body {
   dt {
     width: 160px;
     padding-top: 6px;
-    @include mq("sp"){
+    @include mq("sp") {
       width: 100%;
     }
   }
@@ -837,8 +835,8 @@ body {
     flex-grow: 1;
     padding: 0;
     margin: 0;
-    @include mq("sp"){
-      margin-top: 8px;  
+    @include mq("sp") {
+      margin-top: 8px;
     }
   }
 }
@@ -846,14 +844,14 @@ body {
 .contact-label {
   font-size: 16px;
   font-weight: 700;
-  @include mq("sp"){
+  @include mq("sp") {
     display: inline-block;
   }
 }
 
 .contact-label-required {
   position: relative;
-  @include mq("sp"){
+  @include mq("sp") {
     padding-right: 54px;
   }
 
@@ -887,12 +885,12 @@ body {
 
 .radio-item {
   margin-right: 36px;
-  @include mq("sp"){
+  @include mq("sp") {
     display: block;
     margin-bottom: 16px;
   }
-  span{
-    @include mq("sp"){
+  span {
+    @include mq("sp") {
       font-weight: bold;
     }
   }
@@ -1074,7 +1072,7 @@ body {
   }
   .btn-arrow {
     background: $color-main url(../img/button-arrow.png) no-repeat center right 8px;
-    @include mq("sp"){
+    @include mq("sp") {
       // max-width: 304px;
       width: 100%;
     }
@@ -1085,82 +1083,119 @@ body {
 // Footer
 // ==================================
 
-.wrappe{
+.wrappe {
   position: relative;
 }
 
-#footer{
-background: linear-gradient(to bottom, #666, #333);
-opacity: 1;
-color: #fff;
-position: absolute;
-width: 100%;
-height: auto;
-
+#footer {
+  background: linear-gradient(to bottom, #666, #333);
+  opacity: 1;
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  padding: 48px 0 24px;
 }
 
-// .inner-footer{
-// bottom: 0;
-// width: 100%;
-// height: 900px;
-// }
-
-
-.footer-wrapper{
+.footer-wrapper {
   display: flex;
-  padding-top: 60px;
-}
 
-.footer-left{
-  img{
-    width: 204px;
+  @include mq("sp") {
+    display: block;
   }
 }
 
-.footer-middle{
-  .footer-nav{
-    width: 335px;
-    ul{
+.footer-left {
+  width: 40%;
+  @include mq("sp"){
+    width: 100%;
+  }
+  .footer-rogo {
+    width: 205px;
+  }
+  .footer-address-wrapper{
+    .footer-address-1{
+      width: 100%;
+    }
+    .footer-address-2{
+      width: 100%;
+    }
+  }
+}
+
+.footer-middle {
+  width: 50%;
+
+  @include mq("sp") {
+    padding: 50px 0;
+    width: 100%;
+  }
+  .footer-nav {
+    ul {
       display: flex;
-      margin-left: 203px;
-      li{
+      flex-wrap: wrap;
+      li {
         padding-right: 40px;
-        &:last-child{
+        &:last-child {
           padding-right: 0;
+        }
+        @include mq("tab") {
+          padding-right: 20px;
+        }
+        @include mq("sp") {
+          padding-right: 16px;
         }
       }
     }
   }
 }
 
-.footer-right{
-  ul{
-    display: flex;
+.footer-right {
+  width: 20%;
+
+  @include mq("sp") {
+    margin: 0 auto;
   }
-  margin-left: 500px;
-  img{
+  ul {
+    display: flex;
+    justify-self: flex-end;
+    @include mq("sp"){
+      justify-content: center;
+    }
+  }
+
+  img {
     width: 50px;
     padding-left: 20px;
   }
 }
 
-.footer-address-1{
+.footer-address-1 {
   padding-top: 32px;
 }
 
-.footer-address-2{
+.footer-address-2 {
   padding-top: 14px;
 }
 
-.footer-copy-right{
+.footer-copy-right {
   text-align: center;
-  padding: 24px;
+  padding-top: 24px;
+  @include mq("sp"){
+    font-size: 14px;
+  }
 }
 
-#page-top{
+#page-top {
   width: 60px;
   // padding: 24px;
   position: fixed;
   right: 24px;
   bottom: 24px;
+
+  @include mq("sp") {
+    width: 40px;
+    right: 10px;
+    bottom: 10px;
+  }
 }
