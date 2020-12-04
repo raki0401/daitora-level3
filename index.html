@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Kosugi&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+
   <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
 
 
@@ -38,34 +40,76 @@
             </ul>
           </nav>
           <!-- ここからハンバーガーメニュー -->
-  
+
         </div>
       </div>
     </header>
-  
+
     <section class="top">
-      <div class="top-content">
-        <div class="top-text">
-          9番伝えたい<br class="hidden-tab hidden-pc">ことを書く
+      <!-- スライダーのメインコンテナの div 要素 -->
+      <div class="swiper-container">
+        <!-- ラッパーの（スライドを囲む） div 要素 -->
+        <div class="swiper-wrapper">
+          <!-- ページネーションの div 要素 -->
+          <div class="swiper-slide">
+            <div class="top-content">
+              <div class="top-text">
+                2番伝えたい<br class="hidden-tab hidden-pc">ことを書く
+              </div>
+              <div class="top-sub-text">
+                リードリードリード
+              </div>
+              <div class="top-button"><a class="btn-blue btn1" href="">お問い合わせ1</a></div>
+            </div>
+          </div>
+          <!-- ページネーションの div 要素 -->
+          <div class="swiper-slide">
+            <div class="top-content">
+              <div class="top-text">
+                3番伝えたい<br class="hidden-tab hidden-pc">ことを書く
+              </div>
+              <div class="top-sub-text">
+                リードリードリード
+              </div>
+              <div class="top-button"><a class="btn-blue btn1" href="">お問い合わせ2</a></div>
+            </div>
+          </div>
+          <!-- ページネーションの div 要素 -->
+          <div class="swiper-slide">
+            <div class="top-content">
+              <div class="top-text">
+                4番伝えたい<br class="hidden-tab hidden-pc">ことを書く
+              </div>
+              <div class="top-sub-text">
+                リードリードリード
+              </div>
+              <div class="top-button"><a class="btn-blue btn1" href="">お問い合わせ3</a></div>
+            </div>
+          </div>
+          <!-- ページネーションの div 要素 -->
+          <div class="swiper-pagination"></div>
+
+          <!-- ナビゲーションボタンの div 要素-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- スクロールバーの div 要素 -->
+          <div class="swiper-scrollbar"></div>
         </div>
-        <div class="top-sub-text">
-          リードリードリード
-        </div>
-        <div class="top-button"><a class="btn" href="#">お問い合わせ</a></div>
       </div>
     </section>
-  
+
     <!-- ======================================================
                               CARD
     ====================================================== -->
-  
+
     <section id="card" class="card section">
       <div class="inner">
         <h2 class="section-title">Card</h2>
         <div class="card-items">
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-1.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-1.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -74,7 +118,7 @@
           </div>
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-2.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-2.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -83,7 +127,7 @@
           </div>
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-3.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-3.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -92,7 +136,7 @@
           </div>
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-4.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-4.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -101,7 +145,7 @@
           </div>
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-5.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-5.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -110,7 +154,7 @@
           </div>
           <div class="card-item">
             <a class="media" href="#">
-              <div class="media-img"><img src="./img/card-img-6.png" alt=""></div>
+              <div class="media-img"><img src="./img/card-img-6.png" alt="no-image"></div>
               <div class="media-body">
                 <div class="media-title">タイトルタイトル</div>
                 <div class="media-text">テキストテキストテキストテキストテキストテキストテキストテキストテキスト</div>
@@ -120,96 +164,96 @@
         </div>
       </div>
     </section>
-  
+
     <!-- ======================================================
                               NEWS
     ====================================================== -->
-  
+
     <section id="news" class="news section">
       <div class="inner">
         <h2 class="section-title">News</h2>
-  
+
         <div class="info-items">
-  
+
           <div class="info-item">
             <div class="info-meta">
               <time class="info-time">2019-01-30</time>
               <div class="info-label info-label01">
-                <a href="#">ラベル1</a>
+                <a href="">ラベル1</a>
               </div>
             </div>
             <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュース</div>
           </div>
-  
+
           <div class="info-item">
             <div class="info-meta">
               <time class="info-time" datetime="2019-01-30">2019-01-30</time>
               <div class="info-label info-label02">
-                <a href="#">ラベル2</a>
+                <a href="">ラベル2</a>
               </div>
             </div>
             <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュース</div>
           </div>
-  
+
           <div class="info-item">
             <div class="info-meta">
               <time class="info-time">2019-01-30</time>
               <div class="info-label info-label03">
-                <a href="#">ラベル3</a>
+                <a href="">ラベル3</a>
               </div>
             </div>
             <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュース</div>
           </div>
-  
+
           <div class="info-item">
             <div class="info-meta">
               <time class="info-time">2019-01-30</time>
               <div class="info-label info-label01">
-                <a href="#">ラベル1</a>
+                <a href="">ラベル1</a>
               </div>
             </div>
             <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュースニュース</div>
           </div>
-  
+
           <div class="info-item">
             <div class="info-meta">
               <time class="info-time">2019-01-30</time>
               <div class="info-label info-label01">
-                <a href="#">ラベル1</a>
+                <a href="">ラベル1</a>
               </div>
             </div>
             <div class="info-title">ニュースニュースニュースニュースニュースニュースニュースニュース</div>
           </div>
-  
+
         </div>
         <div class="news-link">
-          <a href="#">more</a>
+          <a href="">more</a>
         </div>
       </div>
     </section>
-  
+
     <!-- ======================================================
                               PRICE
     ====================================================== -->
-  
+
     <section id="price" class="section">
       <div class="inner price-inner">
         <div class="section-title">Price</div>
         <div class="price-contents">
           <div class="price-image">
-            <img src="./img/price-img.png" alt="">
+            <img src="./img/price-img.png" alt="イメージ写真">
           </div>
-  
+
           <div class="price-table">
             <table class="table">
-  
+
               <tr class="table-wrapper">
                 <th></th>
                 <th>column1</th>
                 <th>column2</th>
               </tr>
-  
-  
+
+
               <tr>
                 <th>row1</th>
                 <td>100円</td>
@@ -233,20 +277,20 @@
                 <td>100円</td>
                 <td>100円</td>
               </tr>
-  
+
             </table>
             <p class="table-under-text">※目安なので詳しくは<a href="">お問い合わせ</a>ください。</p>
           </div>
         </div>
       </div>
     </section>
-  
-  
-  
+
+
+
     <!-- ======================================================
                               ACCESS
     ====================================================== -->
-  
+
     <section id="access" class="section">
       <div class="section-title">Access</div>
       <div class="inner">
@@ -273,13 +317,13 @@
         </div>
       </div>
     </section>
-  
-  
+
+
     <!-- ======================================================
                             CONTACT
   ====================================================== -->
-  
-    <section id="contact" class="section">
+
+    <section id="contact" class="section section-contact">
       <div class="inner">
         <h2 class="section-title">Contact</h2>
         <div class="contact-item">
@@ -294,7 +338,7 @@
                     required>
                 </dd>
               </div>
-  
+
               <div class="contact-control">
                 <dt>
                   <label for="your-mail" class="contact-label contact-label-required">メールアドレス</label>
@@ -304,7 +348,7 @@
                     placeholder="text@example.com" required>
                 </dd>
               </div>
-  
+
               <div class="contact-control">
                 <dt>
                   <label for="your-kind" class="contact-label">お問い合わせ種別</label>
@@ -318,7 +362,7 @@
                   </select>
                 </dd>
               </div>
-  
+
               <div class="contact-control">
                 <dt>
                   <label for="your-massage" class="contact-label">お問い合わせ内容</label>
@@ -329,14 +373,16 @@
                 </dd>
               </div>
             </dl>
-  
+
             <div class="contact-radio">
               <label class="radio-item"><input type="radio" class="form-radio" name="your-radio"
                   checked><span>ラジオ1</span></label>
-              <label class="radio-item"><input type="radio" class="form-radio" name="your-radio"><span>ラジオ2</span></label>
-              <label class="radio-item"><input type="radio" class="form-radio" name="your-radio"><span>ラジオ3</span></label>
+              <label class="radio-item"><input type="radio" class="form-radio"
+                  name="your-radio"><span>ラジオ2</span></label>
+              <label class="radio-item"><input type="radio" class="form-radio"
+                  name="your-radio"><span>ラジオ3</span></label>
             </div>
-  
+
             <div class="contact-check">
               <label>
                 <input class="form-checkbox" type="checkbox" name="your-check" required>
@@ -344,7 +390,7 @@
                 </input>
               </label>
             </div>
-  
+
             <div class="contact-submit">
               <input type="submit" class="btn-blue btn-arrow" value="送信する">
             </div>
@@ -352,13 +398,13 @@
         </div>
       </div>
     </section>
-  
-    
+
+
 
     <!-- ======================================================
                             Footer
   ====================================================== -->
-  
+
     <section id="footer">
       <div class="inner">
         <div class="footer-wrapper">
@@ -396,18 +442,17 @@
           <p>Copyright © 2020 デイトラ All rights reserved.</p>
         </div>
       </div>
-  
+
       <div id="page-top"><a href=""><img src="./img/totop.png" alt=""></a></div>
     </section>
   </div>
 
 
-  
 
-  <script src="https://code.jquery-.com/jquery-3.4.1.js"></script>
-  <!--ライブラリー本体-->
-  <script src="js/script.js"></script>     
-  <!--//ファイル名（practiceの部分は自分でつけた名前のファイル名）-->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
+  <script src="./slide.js"></script>
 </body>
 
 </html>
