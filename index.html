@@ -6,18 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="デスクリプションです">
   <link rel="stylesheet" href="./css/reset.css">
+  
+<!-- この下の２つの<link>です。順番を入れ替えたら挙動が変わります。 -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Kosugi&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-
-  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
-
-
-
   <title>ヘッダーとメインビジュアルのコーディング</title>
 </head>
 
@@ -86,16 +85,17 @@
               <div class="top-button"><a class="btn-blue btn1" href="">お問い合わせ3</a></div>
             </div>
           </div>
-          <!-- ページネーションの div 要素 -->
-          <div class="swiper-pagination"></div>
-
-          <!-- ナビゲーションボタンの div 要素-->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-
-          <!-- スクロールバーの div 要素 -->
-          <div class="swiper-scrollbar"></div>
         </div>
+        <!-- ページネーションの div 要素 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- ナビゲーションボタンの div 要素-->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- スクロールバーの div 要素 -->
+        <div class="swiper-scrollbar"></div>
+
       </div>
     </section>
 
@@ -449,10 +449,12 @@
 
 
 
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="./script.js"></script>
-  <script src="./slide.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+  <script src="js/swiper.js"></script>
 </body>
 
 </html>
