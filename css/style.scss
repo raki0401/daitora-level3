@@ -232,7 +232,7 @@ body {
   left: 0;
   width: 100%;
   height: $header-height-pc;
-  z-index: 1;
+  z-index: 3;
 
   @include mq("sp") {
     height: $header-height-sp;
