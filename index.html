@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="デスクリプションです">
   <link rel="stylesheet" href="./css/reset.css">
-  
-<!-- この下の２つの<link>です。順番を入れ替えたら挙動が変わります。 -->
+
+  <!-- この下の２つの<link>です。順番を入れ替えたら挙動が変わります。 -->
   <link rel="stylesheet" href="./css/animate.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -39,27 +39,27 @@
             </ul>
           </nav>
           <!-- ここからハンバーガーメニュー -->
-          <nav>
-            <div class="drawer">
-             <a class="navbar_brand" href="#">Navbar</a>
-             <div class="navbar_toggle">
-              <span class="navbar_toggle_icon"></span>
-              <span class="navbar_toggle_icon"></span>
-              <span class="navbar_toggle_icon"></span>
-             </div>
-            </div>
-            <div class="menu">
-             <ul>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Price</a></li>
-              <li><a href="#">Access</a></li>
-              <li><a href="#">Contact</a></li>
-             </ul>
-            </div>
-           </nav>
         </div>
       </div>
     </header>
+
+    <button class="drawer-icon">
+      <span class="drawar-bars">
+        <span class="drawar-bar"></span>
+        <span class="drawar-bar"></span>
+        <span class="drawar-bar"></span>
+      </span>
+    </button>
+    <div class="drawer-background for-drawer"></div>
+    <div class="drawer-content for-drawer">
+      <ul>
+        <li><a href="">Card</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Price</a></li>
+        <li><a href="">Access</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </div><!-- /drawer-content -->
 
     <section class="top">
       <!-- スライダーのメインコンテナの div 要素 -->
@@ -124,7 +124,8 @@
       <div class="inner">
         <h2 class="section-title">Card</h2>
         <div class="card-items">
-          <div class="card-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow bounceIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-1.png" alt="no-image"></div>
               <div class="media-body">
@@ -133,7 +134,8 @@
               </div>
             </a>
           </div>
-          <div class="card-item wow rotateIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow rotateIn" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-2.png" alt="no-image"></div>
               <div class="media-body">
@@ -142,7 +144,8 @@
               </div>
             </a>
           </div>
-          <div class="card-item wow shake" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow shake" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-3.png" alt="no-image"></div>
               <div class="media-body">
@@ -151,7 +154,8 @@
               </div>
             </a>
           </div>
-          <div class="card-item wow tada"data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow tada" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-4.png" alt="no-image"></div>
               <div class="media-body">
@@ -160,7 +164,8 @@
               </div>
             </a>
           </div>
-          <div class="card-item wow slideInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow slideInRight" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-5.png" alt="no-image"></div>
               <div class="media-body">
@@ -169,7 +174,8 @@
               </div>
             </a>
           </div>
-          <div class="card-item wow hinge" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10" data-wow-iteration="3">
+          <div class="card-item wow hinge" data-wow-duration="2s" data-wow-delay="1s" data-wow-offset="10"
+            data-wow-iteration="3">
             <a class="media" href="#">
               <div class="media-img"><img src="./img/card-img-6.png" alt="no-image"></div>
               <div class="media-body">
