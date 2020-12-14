@@ -173,8 +173,9 @@ body {
 }
 
 .header-left {
-  margin-top: 14px;
   line-height: 1;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .header-left img {
@@ -182,16 +183,14 @@ body {
 }
 
 @media (max-width: 1247px) {
-  .header-left {
+  .header-left img {
     width: 180px;
-    height: auto;
   }
 }
 
 @media (max-width: 767px) {
-  .header-left {
+  .header-left img {
     width: 140px;
-    height: auto;
   }
 }
 
@@ -238,6 +237,120 @@ body {
   .header-nav {
     display: none;
   }
+}
+
+.drawer-icon {
+  display: none;
+  border: none;
+  background: transparent;
+  position: fixed;
+  right: 16px;
+  top: 20px;
+  z-index: 100;
+}
+
+.drawer-icon.is-checked {
+  transform: translateX(-200px);
+}
+
+@media (max-width: 767px) {
+  .drawer-icon {
+    display: block;
+  }
+}
+
+.drawer-bars {
+  display: inline-block;
+  position: relative;
+  width: 22px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.drawer-bar {
+  width: 100%;
+  height: 4px;
+  display: inline-block;
+  left: 0;
+  background-color: #fff;
+  position: absolute;
+}
+
+.drawer-bar:nth-child(1) {
+  top: 0;
+}
+
+.drawer-bar:nth-child(2) {
+  top: 8px;
+}
+
+.drawer-bar:nth-child(3) {
+  top: 16px;
+}
+
+.is-checked .drawer-bar:nth-of-type(1) {
+  top: 10px;
+  transform: rotate(-45deg);
+}
+
+.is-checked .drawer-bar:nth-of-type(2) {
+  background: transparent;
+}
+
+.is-checked .drawer-bar:nth-of-type(3) {
+  top: 10px;
+  transform: rotate(45deg);
+}
+
+.drawer-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 39;
+  opacity: 0;
+  background-color: #000;
+}
+
+.drawer-background.is-checked {
+  display: block;
+  opacity: 0.5;
+}
+
+.drawer-content {
+  width: 200px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 40;
+  background: #fff;
+  max-width: 80%;
+  color: #707070;
+}
+
+.drawer-content ul li {
+  border-bottom: 2px dotted #707070;
+}
+
+.drawer-content ul li a {
+  text-decoration: none;
+  padding: 16px 30px 14px 20px;
+  display: block;
+  color: #707070;
+  position: relative;
+}
+
+.drawer-content ul li a::after {
+  content: "";
+  position: absolute;
+  background: url(../img/arrow-b.png) no-repeat center;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
 }
 
 .top {

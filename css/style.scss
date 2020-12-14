@@ -249,19 +249,20 @@ body {
 }
 
 .header-left {
-  margin-top: 14px;
   line-height: 1;
+  vertical-align: middle;
+  align-items: center;
 
   img {
     width: 204px;
-  }
-  @include mq("tab") {
-    width: 180px;
-    height: auto;
-  }
-  @include mq("sp") {
-    width: 140px;
-    height: auto;
+      @include mq("tab") {
+        width: 180px;
+        // height: auto;
+      }
+      @include mq("sp") {
+        width: 140px;
+      }
+   
   }
 }
 
@@ -271,24 +272,23 @@ body {
 }
 
 .header-nav {
-  
   ul {
     display: flex;
   }
-  
+
   li {
     margin-right: 40px;
     transition: all 0.7s;
-    
+
     &:last-child {
       margin-right: 0;
     }
-    
+
     a {
       position: relative;
       text-decoration: none;
       color: #fff;
-      
+
       &::after {
         content: "";
         position: absolute;
@@ -319,11 +319,125 @@ $drawer-bar-width: 22px;
 $drawer-bar-height: 4px;
 $drawer-content-width: 200px;
 
-.drawer-icon{
+.drawer-icon {
+  display: none;
+  border: none;
+  background: transparent;
+  position: fixed;
+  right: $padding-sp;
+  top: 20px;
+  z-index: 100;
 
+  &.is-checked {
+		transform: translateX(-$drawer-content-width);
+	}
+
+  @include mq("sp") {
+    display: block;
+  }
+}
+
+.drawer-bars {
+  display: inline-block;
+  position: relative;
+  width: $drawer-bar-width;
+  height: $drawer-bar-height + ($drawer-bar-space + $drawer-bar-height) * 2;
+  // background-color: ;
+  vertical-align: middle;
+}
+
+.drawer-bar {
+  width: 100%;
+  height: $drawer-bar-height;
+  display: inline-block;
+  left: 0;
+  background-color: #fff;
+  position: absolute;
+
+  &:nth-child(1) {
+    top: 0;
+  }
+  &:nth-child(2) {
+    top: $drawer-bar-height + $drawer-bar-space;
+  }
+  &:nth-child(3) {
+    top: ($drawer-bar-height + $drawer-bar-space) * 2;
+  }
+
+  .is-checked & {
+		&:nth-of-type(1) {
+			top: 10px;
+			transform: rotate(-45deg);
+		}
+
+		&:nth-of-type(2) {
+			background: transparent;
+		}
+
+		&:nth-of-type(3) {
+			top: 10px;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.drawer-background{
+  // display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: map-get($layer, drawer )- 1;
+  opacity: 0;
+  background-color: #000;
+  &.is-checked{
+    display:block;
+    opacity: 0.5;
+  }
 }
 
 
+.drawer-content{
+  // overflow: auto;
+  width: $drawer-content-width;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: map-get($layer, drawer );
+  background: #fff;
+  max-width: 80%;
+  color: #707070;
+  // &.is-checked {
+	// 	transform: translateX(0);
+	// 	box-shadow: 6px 0 25px rgba(#000, 0.16);
+  // }
+  
+  ul{
+    li{
+      border-bottom: 2px dotted #707070;
+      a{
+        text-decoration: none;
+        padding: 16px 30px 14px 20px;
+        display: block;
+        color: #707070;
+        position: relative;
+
+        &::after{
+          content:"";
+          position: absolute;
+          background:url(../img/arrow-b.png) no-repeat center;
+          width: 20px;
+          height: 20px;
+          top:50%;
+          right:20px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
 
 // ==================================
 // Top
@@ -407,20 +521,19 @@ $drawer-content-width: 200px;
 }
 
 .btn1 {
-    box-shadow: none;
+  box-shadow: none;
   transition: all 0.7s;
   &:hover {
     transform: rotateZ(360deg);
   }
 }
 
-
 //ここからtopのスライダー
 
 .swiper-container {
   height: 600px;
-  @include mq("sp"){
-    height:500px;
+  @include mq("sp") {
+    height: 500px;
   }
 }
 
@@ -441,8 +554,7 @@ $drawer-content-width: 200px;
   transition: all 0.3s ease 0s;
   margin: -20px 0 0;
   z-index: 3;
-  @include mq("sp"){
-    
+  @include mq("sp") {
   }
   &:hover {
     opacity: $hover-opacity;
@@ -455,10 +567,10 @@ $drawer-content-width: 200px;
 .swiper-button-prev {
   background: transparent url(../img/arrow-prev.png) no-repeat center center / 60px;
   left: calc(50% - #{$layout-width-inner / 2});
-  @include mq("tab"){
-    left:15px;
+  @include mq("tab") {
+    left: 15px;
   }
-  @include mq("sp"){
+  @include mq("sp") {
     background: transparent url(../img/arrow-prev.png) no-repeat center center / 40px;
     left: 8%;
   }
@@ -467,11 +579,11 @@ $drawer-content-width: 200px;
 .swiper-button-next {
   background: transparent url(../img/arrow-next.png) no-repeat center center / 60px;
   right: calc(50% - #{$layout-width-inner / 2});
-  @include mq("tab"){
-    right:15px;
+  @include mq("tab") {
+    right: 15px;
   }
-  @include mq("sp"){
-  background: transparent url(../img/arrow-next.png) no-repeat center center / 40px;
+  @include mq("sp") {
+    background: transparent url(../img/arrow-next.png) no-repeat center center / 40px;
 
     right: 8%;
   }
@@ -495,7 +607,6 @@ $drawer-content-width: 200px;
 // }
 
 //ここまでがtopスライダー
-
 
 // ==================================
 // Card
