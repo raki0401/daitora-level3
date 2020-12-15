@@ -247,6 +247,7 @@ body {
   right: 16px;
   top: 20px;
   z-index: 100;
+  transition: all 0.3s ease 0s;
 }
 
 .drawer-icon.is-checked {
@@ -274,6 +275,7 @@ body {
   left: 0;
   background-color: #fff;
   position: absolute;
+  transition: all 0.7s ease 0s;
 }
 
 .drawer-bar:nth-child(1) {
@@ -303,6 +305,7 @@ body {
 }
 
 .drawer-background {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -319,6 +322,7 @@ body {
 }
 
 .drawer-content {
+  overflow: auto;
   width: 200px;
   height: 100%;
   position: fixed;
@@ -328,6 +332,15 @@ body {
   background: #fff;
   max-width: 80%;
   color: #707070;
+  transform: translateX(105%);
+  transition: all 0.5s ease 0s;
+  bottom: auto;
+  left: auto;
+}
+
+.drawer-content.is-checked {
+  transform: translateX(0);
+  box-shadow: 6px 0 25px rgba(255, 0, 0, 0.16);
 }
 
 .drawer-content ul li {

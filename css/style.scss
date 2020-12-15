@@ -327,6 +327,7 @@ $drawer-content-width: 200px;
   right: $padding-sp;
   top: 20px;
   z-index: 100;
+  transition: all 0.3s ease 0s;
 
   &.is-checked {
 		transform: translateX(-$drawer-content-width);
@@ -353,6 +354,7 @@ $drawer-content-width: 200px;
   left: 0;
   background-color: #fff;
   position: absolute;
+  transition: all 0.7s ease 0s;
 
   &:nth-child(1) {
     top: 0;
@@ -382,24 +384,25 @@ $drawer-content-width: 200px;
 }
 
 .drawer-background{
-  // display: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  z-index: map-get($layer, drawer )- 1;
+  z-index: map-get($layer, drawer ) - 1;
   opacity: 0;
   background-color: #000;
+
   &.is-checked{
-    display:block;
+    display: block;
     opacity: 0.5;
   }
 }
 
 
 .drawer-content{
-  // overflow: auto;
+  overflow: auto;
   width: $drawer-content-width;
   height: 100%;
   position: fixed;
@@ -409,10 +412,15 @@ $drawer-content-width: 200px;
   background: #fff;
   max-width: 80%;
   color: #707070;
-  // &.is-checked {
-	// 	transform: translateX(0);
-	// 	box-shadow: 6px 0 25px rgba(#000, 0.16);
-  // }
+  transform: translateX(105%);
+  transition: all 0.5s ease 0s;
+  bottom: auto;
+  left: auto;
+  
+  &.is-checked {
+		transform: translateX(0);
+		box-shadow: 6px 0 25px rgba(red, 0.16);
+  }
   
   ul{
     li{
