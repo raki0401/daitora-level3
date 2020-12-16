@@ -1445,6 +1445,7 @@ $drawer-content-width: 200px;
     opacity: 0.5;
     transform: rotateY(480deg);
   }
+  
   @include mq("sp") {
     width: 40px;
     right: 10px;
