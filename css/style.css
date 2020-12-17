@@ -1391,12 +1391,17 @@ body {
   position: fixed;
   right: 24px;
   bottom: 24px;
-  transition: all 0.7s;
+  transition: all 1s;
+  visibility: hidden;
 }
 
 #page-top:hover {
   opacity: 0.5;
   transform: rotateY(480deg);
+}
+
+#page-top.is-show {
+  visibility: visible;
 }
 
 @media (max-width: 767px) {

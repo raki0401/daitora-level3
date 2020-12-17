@@ -1440,12 +1440,17 @@ $drawer-content-width: 200px;
   position: fixed;
   right: 24px;
   bottom: 24px;
-  transition: all 0.7s;
+  transition: all 1s;
+  // display: none;  
+  visibility: hidden;
+  // z-index: 1000;
   &:hover {
     opacity: 0.5;
     transform: rotateY(480deg);
   }
-  
+  &.is-show {
+		visibility: visible;
+	}
   @include mq("sp") {
     width: 40px;
     right: 10px;

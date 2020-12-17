@@ -1,5 +1,5 @@
 
-//今までのやつ
+//  1.今までのやつ
 
 // $(function () {
 //   var pagetop = $('#page-top');
@@ -7,8 +7,8 @@
 //   pagetop.hide();
 //   // 100px スクロールしたらボタン表示
 //   $(window).scroll(function () {
-//     if ($(this).scrollTop() > 1000) {
-//       pagetop.fadeIn("800");
+//     if ($(this).scrollTop() > 100) {
+//       pagetop.fadeIn("200");
 //     } else {
 //       pagetop.fadeOut();
 //     }
@@ -22,7 +22,7 @@
 
 
 
-//DAY23で自分でカスタマイズしたやつ
+//  2. DAY23で自分でカスタマイズしたやつ
 
 // $(function(){
 
@@ -41,17 +41,17 @@
 //   let pagetop = $('#page-top');
 //   pagetop .hide();
 //   $(window).on("scroll", function(){
-//     if($(this).scrollTop() > 1000){
-//       $('#page-top').fadeIn(900);
+//     if($(this).scrollTop() > 500){
+//       $('#page-top').fadeIn();
 //     }else{
-//       $('#page-top').fadeOut(200);
+//       $('#page-top').fadeOut();
 //     }
 //   });
 // });
 
 
 
-//DAY23の解答そのまま
+//  3. DAY23の解答そのまま
 
 jQuery(function() {
 
@@ -80,9 +80,9 @@ jQuery(function() {
   jQuery(window).on("scroll", function() {
 
     if (100 < jQuery(this).scrollTop()) {
-      jQuery('.totop').addClass('is-show');
+      jQuery('#page-top').addClass('is-show');
     } else {
-      jQuery('.totop').removeClass('is-show');
+      jQuery('#page-top').removeClass('is-show');
     }
   });
 });
