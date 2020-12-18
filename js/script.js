@@ -39,7 +39,7 @@
 // $(function(){
 
 //   let pagetop = $('#page-top');
-//   pagetop .hide();
+//   // pagetop .hide();
 //   $(window).on("scroll", function(){
 //     if($(this).scrollTop() > 500){
 //       $('#page-top').fadeIn();
@@ -58,7 +58,7 @@ jQuery(function() {
   // スムーススクロール
   jQuery('a[href^="#"]').click(function() {
     let header = jQuery(".header").innerHeight();
-    let speed = 300;
+    let speed = 900;
     let id = jQuery(this).attr("href");
     let target = jQuery("#" == id ? "html" : id);
     let position = jQuery(target).offset().top - header;

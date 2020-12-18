@@ -1440,10 +1440,10 @@ $drawer-content-width: 200px;
   position: fixed;
   right: 24px;
   bottom: 24px;
-  transition: all 1s;
   // display: none;  
   visibility: hidden;
   // z-index: 1000;
+  transition: visibility 0.5s;
   &:hover {
     opacity: 0.5;
     transform: rotateY(480deg);
