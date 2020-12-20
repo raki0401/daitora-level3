@@ -148,13 +148,13 @@ img {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  padding: 5px 0 0px 30px;
+  padding: 5px 0 0px 0px;
   position: relative;
   line-height: 1;
 
   @include mq("sp") {
     font-size: 35px;
-    margin-bottom: 25px !important;
+    margin-bottom: 40px !important;
     padding-top: 0px;
   }
   &::after {
@@ -163,8 +163,8 @@ img {
     width: 60px;
     height: 4px;
     position: absolute;
-    bottom: -50%;
-    left: 51.2%;
+    bottom: -30%;
+    left: 50%;
     transform: translateX(-50%);
   }
 }
@@ -300,11 +300,15 @@ body {
         opacity: 0;
         transition: all 0.3s ease 0s;
       }
-      &:hover {
+      
+      
+      &.is-active{
         &::after {
           opacity: 1;
         }
       }
+
+      
     }
   }
   @include mq("sp") {
@@ -834,10 +838,14 @@ $drawer-content-width: 200px;
   padding-right: 40px;
   padding-left: 40px;
   background: #efefef;
+  // .section-title {
+  //   padding: 50px 0;
+  // }
 
-  @include mq("sp") {
-    padding: 10px 0px;
-  }
+  // @include mq("sp") {
+  //   padding: 10px 0px;
+
+  // }
 }
 
 .section-title {
@@ -1032,6 +1040,38 @@ $drawer-content-width: 200px;
 // *{
 //   outline: 1px solid ;
 //   }
+
+// ==================================
+// Q & A
+// ==================================
+.qa-items{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px; 
+}
+.qa-item{
+  margin-bottom: 24px;
+}
+
+.accordion-head{
+  background-color: #3F51B5;
+  font-weight: bold;
+  color: #fff;
+  padding: 6px 0 6px 56px;
+  font-size: 18px;
+  position: relative;
+
+
+  &::before{
+    content: "Q";
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
 
 // ==================================
 // Contact
@@ -1392,6 +1432,10 @@ $drawer-content-width: 200px;
         }
         @include mq("sp") {
           padding-right: 16px;
+        }
+        a{
+          text-decoration: none;
+          color: #fff;
         }
       }
     }

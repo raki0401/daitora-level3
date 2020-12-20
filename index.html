@@ -31,7 +31,7 @@
         <div class="header-right">
           <nav class="header-nav">
             <ul>
-              <li><a href="#card" class="is-active">Card</a></li>
+              <li><a href="#card">Card</a></li>
               <li><a href="#news">News</a></li>
               <li><a href="#price">Price</a></li>
               <li><a href="#access">Access</a></li>
@@ -41,7 +41,7 @@
         </div>
       </div>
     </header>
-    
+
     <!-- ここからハンバーガーメニュー -->
     <button class="drawer-icon js-drawer for-drawer" data-target="for-drawer">
       <span class="drawer-bars">
@@ -259,9 +259,9 @@
                               PRICE
     ====================================================== -->
 
-    <section id="price" class="section">
+    <section id="price" class="section price">
       <div class="inner price-inner">
-        <div class="section-title">Price</div>
+        <h2 class="section-title">Price</h2>
         <div class="price-contents">
           <div class="price-image">
             <img src="./img/price-img.png" alt="イメージ写真">
@@ -311,12 +311,12 @@
 
 
     <!-- ======================================================
-                              ACCESS
-    ====================================================== -->
+                                ACCESS
+      ====================================================== -->
 
     <section id="access" class="section">
-      <div class="section-title">Access</div>
       <div class="inner">
+        <h2 class="section-title">Access</h2>
         <div class="access-map">
           <div class="iframe-wrappe">
             <iframe
@@ -341,10 +341,52 @@
       </div>
     </section>
 
+    <!-- ======================================================
+                              Q & A
+    ====================================================== -->
+    <section id="qa" class="qa section">
+      <div class="inner">
+        <h2 class="section-title">Q &amp; A</h2>
+        <dl class="qa-items">
+          <div class="qa-item">
+            <dt class="accordion-head">クリックするとどうなりますか？<span class="accordion-icon"></span></dt>
+            <dd class="accordion-body">
+              <div class="accordion-body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div>
+            </dd>
+          </div>
+          <div class="qa-item">
+            <dt class="accordion-head">クリックするとどうなりますか？<span class="accordion-icon"></span></dt>
+            <dd class="accordion-body">
+              <div class="accordion-body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div>
+            </dd>
+          </div>
+          <div class="qa-item">
+            <dt class="accordion-head">クリックするとどうなりますか？<span class="accordion-icon"></span></dt>
+            <dd class="accordion-body">
+              <div class="accordion-body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div>
+            </dd>
+          </div>
+          <div class="qa-item">
+            <dt class="accordion-head">クリックするとどうなりますか？<span class="accordion-icon"></span></dt>
+            <dd class="accordion-body">
+              <div class="accordion-body-in">アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。アコーディオンでここが開きます。</div>
+            </dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
 
     <!-- ======================================================
-                            CONTACT
-  ====================================================== -->
+                               CONTACT
+      ====================================================== -->
 
     <section id="contact" class="section section-contact">
       <div class="inner">
@@ -443,11 +485,11 @@
           <div class="footer-middle">
             <nav class="footer-nav">
               <ul>
-                <li>Card</li>
-                <li>News</li>
-                <li>Price</li>
-                <li>Access</li>
-                <li>Contact</li>
+                <li><a href="#card">Card</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#price">Price</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#contact">Contact</a></li>
               </ul>
             </nav>
           </div>
@@ -481,6 +523,7 @@
   <script src="./js/wow.min.js"></script>
   <script>new WOW().init();</script>
   <script src="./js/drawer.js"></script>
- </body>
+  <script src="./js/click.js"></script>
+</body>
 
 </html>

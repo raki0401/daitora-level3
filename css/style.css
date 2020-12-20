@@ -88,7 +88,7 @@ img {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
-  padding: 5px 0 0px 30px;
+  padding: 5px 0 0px 0px;
   position: relative;
   line-height: 1;
 }
@@ -96,7 +96,7 @@ img {
 @media (max-width: 767px) {
   .section-title {
     font-size: 35px;
-    margin-bottom: 25px !important;
+    margin-bottom: 40px !important;
     padding-top: 0px;
   }
 }
@@ -107,8 +107,8 @@ img {
   width: 60px;
   height: 4px;
   position: absolute;
-  bottom: -50%;
-  left: 51.2%;
+  bottom: -30%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
@@ -229,7 +229,7 @@ body {
   transition: all 0.3s ease 0s;
 }
 
-.header-nav li a:hover::after {
+.header-nav li a.is-active::after {
   opacity: 1;
 }
 
@@ -754,12 +754,6 @@ body {
   background: #efefef;
 }
 
-@media (max-width: 767px) {
-  #price {
-    padding: 10px 0px;
-  }
-}
-
 .section-title {
   margin-bottom: 100px;
 }
@@ -958,6 +952,33 @@ body {
   .access-map-btn-wrappe .btn-blue {
     width: 90%;
   }
+}
+
+.qa-items {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 900px;
+}
+
+.qa-item {
+  margin-bottom: 24px;
+}
+
+.accordion-head {
+  background-color: #3F51B5;
+  font-weight: bold;
+  color: #fff;
+  padding: 6px 0 6px 56px;
+  font-size: 18px;
+  position: relative;
+}
+
+.accordion-head::before {
+  content: "Q";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #contact {
@@ -1339,6 +1360,11 @@ body {
   .footer-middle .footer-nav ul li {
     padding-right: 16px;
   }
+}
+
+.footer-middle .footer-nav ul li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .footer-right {
